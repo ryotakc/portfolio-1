@@ -34,7 +34,7 @@ export default function ContactForm() {
     }
     
     return (
-        <div className="container mx-auto pt-20">
+        <div className="container mx-auto py-20">
             
             <div className="grid w-full max-w-sm items-center gap-1.5 mx-auto">
                 <h1 className="font-bold text-center text-primary/90 text-4xl mb-5 lg:text-6xl">Contact</h1>
