@@ -16,7 +16,7 @@ import Image from "next/image"
 
 export function CarouselPhoto() {
     const plugin = React.useRef(
-        Autoplay({ delay: 5000, stopOnInteraction: true })
+        Autoplay({ delay: 4000, stopOnInteraction: true })
     )
 
     return (

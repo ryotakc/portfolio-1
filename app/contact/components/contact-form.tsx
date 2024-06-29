@@ -45,9 +45,9 @@ export default function ContactForm() {
                         name="name"
                         render={({ field }) => (
                             <FormItem>
-                            <FormLabel>Username</FormLabel>
+                            <FormLabel>Your name</FormLabel>
                             <FormControl>
-                                <Input placeholder="shadcn" {...field} />
+                                <Input placeholder="Leo" {...field} />
                             </FormControl>
                             </FormItem>
                         )}
@@ -58,7 +58,7 @@ export default function ContactForm() {
                             <FormItem>
                             <FormLabel>Email</FormLabel>
                             <FormControl>
-                                <Input type="email" placeholder="shadcn" {...field} />
+                                <Input type="email" placeholder="leo@example.com" {...field} />
                             </FormControl>
                             </FormItem>
                         )}
@@ -67,14 +67,14 @@ export default function ContactForm() {
                         name="body"
                         render={({ field }) => (
                             <FormItem>
-                            <FormLabel>Body</FormLabel>
+                            <FormLabel>Message</FormLabel>
                             <FormControl>
-                                <Textarea placeholder="shadcn" {...field} />
+                                <Textarea placeholder="Hello Leo! lorem ipsum dolor...." {...field} />
                             </FormControl>
                             </FormItem>
                         )}
                         />
-                        <Button type="submit">Submit</Button>
+                        <Button type="submit" className="flex items-center justify-center">Submit</Button>
                     </form>
                 </Form>
 
