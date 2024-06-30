@@ -11,11 +11,11 @@ export default function Home() {
             Hello, I&apos;m Ryota Kato. I&apos;m a full-stack developer and Photographer based in Vancouver Canada. I have a passion for web development and love to create new things. Also I&apos;m always looking for new opportunities to learn and grow.
           </p>
           <div className="flex gap-3 font-semibold">
-            <Link href="https://github.com/" target="_blank" rel="noopener noreferrer">
-              <Button>GitHub</Button>
+            <Link href="https://cv-leo.vercel.app" target="_blank" rel="noopener noreferrer">
+              <Button>My CV</Button>
             </Link>
             <Link href="https://github.com/" target="_blank" rel="noopener noreferrer">
-              <Button>My CV</Button>
+              <Button>GitHub</Button>
             </Link>
           </div>
         </div>

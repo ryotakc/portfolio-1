@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -62,6 +62,7 @@ export default function RootLayout({
             <p className="text-sm">&copy;2024 leo</p>
             <div className="flex flex-col items-center justify-center gap-3">
               <ul className="flex gap-3 items-center justify-center">
+                <li><a href="mailto:rka147@sfu.ca " ><Mail color="#17aa41"></Mail></a></li>
                 <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><Linkedin color="#0077b5"></Linkedin></a></li>
                 <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><Twitter color="#1da1f2"></Twitter></a></li>
                 <li><a href="https://github.com" target="_blank" rel="noopener noreferrer"><Github ></Github></a></li>
