@@ -45,7 +45,7 @@ export default function Home() {
             </div>
           </Card>
         </div>
-        <Card className="row-span-2 lg:col-span-2 my-4">
+        <Card className="row-span-2 lg:col-span-2 mt-4 mb-16">
           <div className="flex flex-col items-center justify-center h-full">
             <MarqueeWidget />
           </div>
