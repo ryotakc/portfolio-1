@@ -31,33 +31,15 @@ export function SheetMenu() {
                 <ul className="flex flex-col items-center justify-center gap-6 py-10">
                 {navItems.map((item) => (
                     <li key={item.label}>
-                        <Button variant="ghost" asChild>
-                        <Link href={item.href}>{item.label}</Link>
-                        </Button>
+                        <SheetClose asChild>
+                            <Button variant="ghost" asChild>
+                                <Link href={item.href}>{item.label}</Link>
+                            </Button>
+                        </SheetClose>
                         </li>
                     ))}
                 </ul>
             </div>
-
-            {/* <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="name" className="text-right">
-                Name
-                </Label>
-                <Input id="name" value="Pedro Duarte" className="col-span-3" />
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="username" className="text-right">
-                Username
-                </Label>
-                <Input id="username" value="@peduarte" className="col-span-3" />
-            </div>
-            </div>
-            <SheetFooter>
-            <SheetClose asChild>
-                <Button type="submit">Save changes</Button>
-            </SheetClose>
-            </SheetFooter> */}
         </SheetContent>
         </Sheet>
     )
