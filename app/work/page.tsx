@@ -18,7 +18,7 @@ import { ProjectDialog } from "./components/project-dialog";
 export default function Work() {
 
     return (
-        <div className="container">
+        <div>
             <PageTitle title="Work">
                 <p className="text-muted-foreground mb-6">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. A, necessitatibus id. Minima, velit debitis quo aliquam quidem aspernatur, odit ipsum odio adipisci optio corporis modi nihil distinctio dignissimos eveniet est.
