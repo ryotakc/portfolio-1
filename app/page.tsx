@@ -8,7 +8,7 @@ export default function Home() {
         <div className="container">
           <h1 className="font-bold text-primary/90 text-4xl mb-5 lg:text-6xl">Welcome to my Portfoilo!</h1>
           <p className="text-muted-foreground mb-6">
-            Hello, I&apos;m Ryota Kato. I&apos;m a full-stack developer and Photographer based in Vancouver Canada. I have a passion for web development and love to create new things. Also I&apos;m always looking for new opportunities to learn and grow.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus expedita quod asperiores fugit amet! Adipisci rem tempore delectus excepturi, voluptatem maiores. Nisi possimus minus suscipit similique eos consequuntur culpa? Doloribus.
           </p>
           <div className="flex gap-3 font-semibold">
             <Link href="https://cv-leo.vercel.app" target="_blank" rel="noopener noreferrer">
