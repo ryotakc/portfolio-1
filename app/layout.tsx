@@ -76,7 +76,7 @@ export default function RootLayout({
                 <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><Linkedin color="#0077b5"></Linkedin></a></li>
                 <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><Twitter color="#1da1f2"></Twitter></a></li>
                 <li><a href="https://github.com" target="_blank" rel="noopener noreferrer"><Github ></Github></a></li>
-                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><Instagram color="#e1306c"></Instagram></a></li>
+                <li><a href="https://instagram.com/leok_can" target="_blank" rel="noopener noreferrer"><Instagram color="#e1306c"></Instagram></a></li>
               </ul>
             </div>
         </footer>
