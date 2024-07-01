@@ -7,12 +7,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
+import { SheetMenu } from "@/components/sheet-menu";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const navItems = [
+export const navItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  { label: "Photography", href: "/photography" },
   { label: "Contact", href: "/contact" },
 ]
 
@@ -44,12 +45,15 @@ export default function RootLayout({
           </h1>
           <ul className="flex gap-1 lg:gap-3">
             {navItems.map((item) => (
-              <li key={item.label}>
+              <li key={item.label} className="hidden sm:block">
                 <Button variant="ghost" asChild>
                   <Link href={item.href}>{item.label}</Link>
                 </Button>
                 </li>
               ))}
+              <li className="block sm:hidden">
+                <SheetMenu/>
+              </li>
               <ModeToggle />
           </ul>
         </header>
