@@ -6,7 +6,7 @@ import LiteYouTubeEmbed from "react-lite-youtube-embed";
 export default function YouTubePlayerWidget() {
     return (
         <>
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 ">
             <LiteYouTubeEmbed
             id="mpnyemsKVz4"
             wrapperClass="absolute inset-0 bg-cover bg-center"

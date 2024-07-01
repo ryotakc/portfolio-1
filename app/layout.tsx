@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 import { SheetMenu } from "@/components/sheet-menu";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,7 +42,12 @@ export default function RootLayout({
         >
         <header className="container h-16 flex items-center border-b justify-between text-primary">
           <h1 className="font-bold text-2xl">
-            <Link href="/">LEO</Link>
+            <Link href="/">
+              <div className="flex">
+                <Image src="/profile.webp" alt="profile" width={32} height={32} className="rounded-md"></Image>
+                <span className="ml-2">leo</span>
+              </div>
+            </Link>
           </h1>
           <ul className="flex gap-1 lg:gap-3">
             {navItems.map((item) => (
