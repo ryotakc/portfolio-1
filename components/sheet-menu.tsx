@@ -13,12 +13,15 @@ import {
 } from "@/components/ui/sheet"
 import { navItems } from "@/app/layout"
 import Link from "next/link"
+import { AlignLeft } from "lucide-react"
 
 export function SheetMenu() {
     return (
         <Sheet>
         <SheetTrigger asChild>
-            <Button variant="outline">Open</Button>
+            <Button variant="outline">
+                <AlignLeft />
+            </Button>
         </SheetTrigger>
         <SheetContent className="text-primary">
             <SheetHeader>
@@ -29,6 +32,13 @@ export function SheetMenu() {
             </SheetHeader>
             <div className="font-semibold">
                 <ul className="flex flex-col items-center justify-center gap-6 py-10">
+                    <li>
+                        <SheetClose asChild>
+                            <Button variant="ghost" asChild>
+                                <Link href="/">Home</Link>
+                            </Button>
+                        </SheetClose>
+                    </li>
                 {navItems.map((item) => (
                     <li key={item.label}>
                         <SheetClose asChild>

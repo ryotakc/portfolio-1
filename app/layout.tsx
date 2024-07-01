@@ -12,7 +12,7 @@ import { SheetMenu } from "@/components/sheet-menu";
 const inter = Inter({ subsets: ["latin"] });
 
 export const navItems = [
-  { label: "Home", href: "/" },
+  { label: "Work", href: "/work" },
   { label: "Photography", href: "/photography" },
   { label: "Contact", href: "/contact" },
 ]
@@ -51,10 +51,10 @@ export default function RootLayout({
                 </Button>
                 </li>
               ))}
+              <ModeToggle />
               <li className="block sm:hidden">
                 <SheetMenu/>
               </li>
-              <ModeToggle />
           </ul>
         </header>
 
