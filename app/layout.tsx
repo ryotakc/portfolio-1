@@ -36,7 +36,7 @@ export default function RootLayout({
       <body className={cn(inter.className, 'min-h-dvh')}>
         <ThemeProvider
               attribute="class"
-              defaultTheme="system"
+              defaultTheme="dark"
               enableSystem
               disableTransitionOnChange
         >

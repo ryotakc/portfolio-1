@@ -47,7 +47,7 @@ const data: Data = {
                     'Shadcn/ui',
         ],
         githubLink: 'https://github.com/',
-        urlLink: 'https://github.com/',
+        urlLink: '/',
         },
         {
             title: 'Portfolio-1',
