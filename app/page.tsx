@@ -26,7 +26,7 @@ export default function Home() {
           </Link>
         </div>
       </PageTitle>
-      <div className="container">
+      <div className="container mb-16">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           {/* Row 1: YouTubePlayerWidget and Calendar */}
           <Card className="lg:col-span-2 lg:row-span-2 p-4">
