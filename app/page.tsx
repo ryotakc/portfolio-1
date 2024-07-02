@@ -4,6 +4,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 import PageTitle from "@/components/page-title";
 import SectionTitle from "@/components/section-title";
 import { Button } from "@/components/ui/button";
+import { Calendar } from "@/components/ui/calendar";
 import { Card } from "@/components/ui/card";
 import YouTubePlayerWidget from "@/components/youtube-player";
 import Image from "next/image";
@@ -26,30 +27,39 @@ export default function Home() {
         </div>
       </PageTitle>
       <div className="container">
-        <div className="grid lg:grid-rows-2 grid-flow-col gap-4">
-          <Card className="lg:row-span-2 lg:col-span-3 p-4"> {/* Added padding for better layout */}
-            <div className="relative w-full h-0 pb-[56.25%]"> {/* Maintain aspect ratio of 16:9 */}
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+          {/* Row 1: YouTubePlayerWidget and Calendar */}
+          <Card className="lg:col-span-2 lg:row-span-2 p-4">
+            <div className="relative w-full h-0 pb-[56.25%]">
               <div className="absolute inset-0">
                 <YouTubePlayerWidget />
               </div>
             </div>
           </Card>
-          <Card className="lg:row-span-1 lg:col-span-1">
+          <Card className="lg:col-span-1 lg:row-span-2">
             <div className="flex flex-col items-center justify-center h-full">
-              <ClockWidget />
+              <Calendar />
             </div>
           </Card>
-          <Card className="lg:row-span-1 lg:col-span-1">
-            <div className="flex flex-col items-center justify-center h-full">
-              <ModeToggle />
-            </div>
-          </Card>
-        </div>
-        <Card className="row-span-2 lg:col-span-2 mt-4 mb-16">
-          <div className="flex flex-col items-center justify-center h-full">
-            <MarqueeWidget />
+          {/* Row 2: ClockWidget, ModeToggle, and MarqueeWidget */}
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 lg:col-span-3">
+            <Card className="col-span-1 lg:col-span-1 flex py-4 sm:py-4">
+              <div className="flex flex-col items-center justify-center h-full w-full">
+                <ClockWidget />
+              </div>
+            </Card>
+            <Card className="col-span-1 lg:col-span-1 flex py-4 sm:py-4">
+              <div className="flex flex-col items-center justify-center h-full w-full">
+                <ModeToggle />
+              </div>
+            </Card>
+            <Card className="col-span-2 lg:col-span-3 flex">
+              <div className="flex flex-col items-center justify-center h-full w-full">
+                <MarqueeWidget />
+              </div>
+            </Card>
           </div>
-        </Card>        
+        </div>
       </div>
     
     </div>
