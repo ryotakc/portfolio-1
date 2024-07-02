@@ -16,7 +16,7 @@ const data: Data = {
                 'Shadcn/ui',
             ],
             // description: 'An environmental impact tracking app for individuals and small businesses',
-            image: '/public/photograph/pic1.jpg',
+            image: '/photograph/pic1.jpg',
         },
         {
             title: 'Portfolio-1',
@@ -29,7 +29,7 @@ const data: Data = {
                 'Android',
             ],
             // description: 'An environmental impact tracking app for individuals and small businesses',
-            image: '/public/photograph/pic2.jpg',
+            image: '/photograph/pic2.jpg',
         }
     ],
     
@@ -46,6 +46,8 @@ const data: Data = {
                     'Vercel',
                     'Shadcn/ui',
         ],
+        githubLink: 'https://github.com/',
+        urlLink: 'https://github.com/',
         },
         {
             title: 'Portfolio-1',
@@ -59,6 +61,8 @@ const data: Data = {
                 'Kotlin',
                 'Android',
         ],
+        githubLink: 'https://github.com/',
+        urlLink: 'https://github.com/',
         }
     ],
 };

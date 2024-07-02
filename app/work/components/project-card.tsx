@@ -11,9 +11,9 @@ import Image from 'next/image';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
     
 interface Props {
-        title: string;
-        image: string;
-        techStack: readonly string[];
+    title: string;
+    image: string;
+    techStack: readonly string[];
 }
 
 export function ProjectCard({ title, image, techStack }: Props) {
@@ -29,14 +29,27 @@ export function ProjectCard({ title, image, techStack }: Props) {
                     </CardTitle>
                 </div>
             </CardHeader>
+            <CardContent>
+                <div className="relative w-full h-48">
+                    <AspectRatio ratio={3 / 2}>
+                        <Image
+                            src={image}
+                            alt={title}
+                            layout="fill"
+                            objectFit="cover"
+                            className="rounded-md"
+                        />
+                    </AspectRatio>
+                </div>
+            </CardContent>
             {techStack.length > 0 && (
             <CardContent className="mt-auto flex">
                 <div className="mt-2 flex flex-wrap gap-1">
-                {techStack.map((stack) => (
-                    <Badge variant="outline" key={stack}>
-                    {stack}
-                    </Badge>
-                ))}
+                    {techStack.map((stack) => (
+                        <Badge variant="outline" key={stack}>
+                        {stack}
+                        </Badge>
+                    ))}
                 </div>
             </CardContent>
             )}
@@ -45,29 +58,3 @@ export function ProjectCard({ title, image, techStack }: Props) {
 }
 
 
-
-// import {
-//     Card,
-//     CardContent,
-//     CardDescription,
-//     CardFooter,
-//     CardHeader,
-//     CardTitle,
-// } from "@/components/ui/card"
-
-// export function ProjectCard() {
-//     return (
-//     <Card>
-//         <CardHeader>
-//             <CardTitle>Card Title</CardTitle>
-//             <CardDescription>Card Description</CardDescription>
-//         </CardHeader>
-//         <CardContent>
-//             <p>Card Content</p>
-//         </CardContent>
-//         <CardFooter>
-//             <p>Card Footer</p>
-//         </CardFooter>
-//     </Card>
-//     )
-// }

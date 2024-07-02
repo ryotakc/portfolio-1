@@ -20,10 +20,12 @@ interface Props {
         image: string;
         techStack: readonly string[];
     };
+    githubLink: string;
+    urlLink: string;
 }
 
 
-export function ProjectDialog({ title, description, techStack, projectCard }: Props) {
+export function ProjectDialog({ title, description, techStack, projectCard, githubLink, urlLink }: Props) {
     return (
         <Dialog>
             <DialogTrigger>
@@ -48,8 +50,12 @@ export function ProjectDialog({ title, description, techStack, projectCard }: Pr
                     </div>
                 </div>
                 <div className="flex flex-row-reverse gap-3 font-semibold ">
-                    <Button>URL</Button>
-                    <Button>GitHub</Button>
+                    <Button>
+                        <a href={urlLink} target="_blank" rel="noopener noreferrer">URL</a>
+                    </Button>
+                    <Button>
+                        <a href={githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </Button>
                 </div>
             </DialogContent>
         </Dialog>

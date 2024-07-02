@@ -10,6 +10,8 @@ export type ProjectDialog = {
     title: string;
     description: string;
     techStack: string[];
+    githubLink: string;
+    urlLink: string;
 }
 
 export type Data = {
