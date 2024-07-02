@@ -15,6 +15,7 @@ import data  from "@/data/en";
 import { ProjectDialog } from "./components/project-dialog";
 
 
+
 export default function Work() {
 
     return (
@@ -35,27 +36,13 @@ export default function Work() {
 
             <SectionTitle title="Projects" subTitle="My Projects">
                 <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4">
-                    <ProjectDialog {...data.projectDialog[0]}   />
-                    {/* <Dialog>
-                        <DialogTrigger>
-                            {data.projects.map((project) => (
-                            <ProjectCard key={project.title} {...project} />
-                            ))}
-                        </DialogTrigger>
-                        <DialogContent>
-                            <DialogHeader>
-                            <DialogTitle>Are you absolutely sure?</DialogTitle>
-                            <DialogDescription>
-                                This action cannot be undone. This will permanently delete your account
-                                and remove your data from our servers.
-                            </DialogDescription>
-                            </DialogHeader>
-                            <div className="flex flex-row-reverse gap-3 font-semibold ">
-                                <Button>URL</Button>
-                                <Button>GitHub</Button>
-                            </div>
-                        </DialogContent>
-                    </Dialog> */}
+                    {data.projectDialog.map((projectDialog, index) => (
+                        <ProjectDialog
+                            key={index}
+                            {...projectDialog}
+                            projectCard={data.projects[index]}
+                        />
+                    ))}
                 </div>
             </SectionTitle>
         </div>

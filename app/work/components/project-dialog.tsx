@@ -15,14 +15,19 @@ interface Props {
     title: string;
     description: string;
     techStack: readonly string[];
+    projectCard: {
+        title: string;
+        image: string;
+        techStack: readonly string[];
+    };
 }
 
 
-export function ProjectDialog({ title, description, techStack }: Props) {
+export function ProjectDialog({ title, description, techStack, projectCard }: Props) {
     return (
         <Dialog>
             <DialogTrigger>
-                <ProjectCard {...data.projects[0]} />
+                <ProjectCard {...projectCard} />
             </DialogTrigger>
             <DialogContent>
                 <DialogHeader>

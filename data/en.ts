@@ -13,10 +13,24 @@ const data: Data = {
             'TailwindCSS',
             'TypeScript',
             'Vercel',
+            'Shadcn/ui',
         ],
         // description: 'An environmental impact tracking app for individuals and small businesses',
         image: '/public/photograph/pic1.jpg',
         },
+        {
+        title: 'Portfolio-1',
+        techStack: [
+            'Java',
+            'Kotlin',
+            'Android',
+            'Java',
+            'Kotlin',
+            'Android',
+        ],
+        // description: 'An environmental impact tracking app for individuals and small businesses',
+        image: '/public/photograph/pic2.jpg',
+        }
     ],
     
     projectDialog: [
@@ -30,8 +44,22 @@ const data: Data = {
             'TailwindCSS',
             'TypeScript',
             'Vercel',
+            'Shadcn/ui',
         ],
         },
+        {
+        title: 'Portfolio-1',
+        description:
+            'An environmental impact tracking app for individuals and small businesses',
+        techStack: [
+            'Java',
+            'Kotlin',
+            'Android',
+            'Java',
+            'Kotlin',
+            'Android',
+        ],
+        }
     ],
 };
 
