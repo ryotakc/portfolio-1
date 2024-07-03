@@ -1,3 +1,4 @@
+import { AccordionHome } from "@/components/accordion-home";
 import ClockWidget from "@/components/clock";
 import MarqueeWidget from "@/components/marquee";
 import { ModeToggle } from "@/components/mode-toggle";
@@ -15,7 +16,8 @@ export default function Home() {
     <div>
       <PageTitle title="Welcome to my portfolio!!">
         <p className="text-muted-foreground mb-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus expedita quod asperiores fugit amet! Adipisci rem tempore delectus excepturi, voluptatem maiores. Nisi possimus minus suscipit similique eos consequuntur culpa? Doloribus.
+          Hello! My name is <span className="font-semibold" color="blue">Ryota Kato</span>! <br />
+          I&apos;m a web developer and photographer based in Vancouver, Canada. Currentry, I&apos;m studying at Simon Fraser University mojor in Computer Science. I&apos;m a passionate coder and photographer. I love to create and capture beautiful things. I&apos;m always looking for new opportunities to learn and grow. Feel free to reach out to me! I&apos;m looking forward to hearing from you! 
         </p>
         <div className="flex gap-3 font-semibold">
           <Link href="https://cv-leo.vercel.app" target="_blank" rel="noopener noreferrer">
@@ -61,7 +63,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-    
+
+      {/* <div className="container">
+        <AccordionHome />
+      </div> */}
     </div>
 
   );

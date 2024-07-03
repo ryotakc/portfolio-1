@@ -22,7 +22,7 @@ export default function Work() {
         <div>
             <PageTitle title="Work">
                 <p className="text-muted-foreground mb-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, necessitatibus id. Minima, velit debitis quo aliquam quidem aspernatur, odit ipsum odio adipisci optio corporis modi nihil distinctio dignissimos eveniet est.
+                    Here are some of the projects I have worked on. I have used a variety of technologies to build these projects. I am always looking for new projects to work on. 
                 </p>
                 <div className="flex gap-3 font-semibold">
                     <a href="https://cv-leo.vercel.app" target="_blank" rel="noopener noreferrer">

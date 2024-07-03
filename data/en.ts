@@ -16,10 +16,10 @@ const data: Data = {
                 'Shadcn/ui',
             ],
             // description: 'An environmental impact tracking app for individuals and small businesses',
-            image: '/photograph/pic1.jpg',
+            image: '/project/project1.jpg',
         },
         {
-            title: 'Portfolio-1',
+            title: 'Demo',
             techStack: [
                 'Java',
                 'Kotlin',
@@ -37,7 +37,7 @@ const data: Data = {
         {
                 title: 'Portfolio',
                 description:
-                    'An environmental impact tracking app for individuals and small businesses',
+                    'Personal Portfolio for my projects. Built with React, Next.js, TailwindCSS, TypeScript, Vercel, Shadcn/ui. It is hosted on Vercel. The source code is available on GitHub (Link below).',
                 techStack: [
                     'React',
                     'Next.js',
@@ -46,11 +46,11 @@ const data: Data = {
                     'Vercel',
                     'Shadcn/ui',
         ],
-        githubLink: 'https://github.com/',
+        githubLink: 'https://github.com/ryotakc/portfolio-1',
         urlLink: '/',
         },
         {
-            title: 'Portfolio-1',
+            title: 'Demo',
             description:
                 'An environmental impact tracking app for individuals and small businesses',
             techStack: [

@@ -16,7 +16,7 @@ export default function About() {
         <div>
             <PageTitle title="Photography">
                 <p className="text-muted-foreground mb-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, necessitatibus id. Minima, velit debitis quo aliquam quidem aspernatur, odit ipsum odio adipisci optio corporis modi nihil distinctio dignissimos eveniet est.
+                    Photography is an art form that captures the world around me, preserving moments in time forever. Our service offers professional skills and creative perspectives to beautifully document your precious moments.
                 </p>
                 <Button>
                     <Link href="/contact">Contact</Link>
