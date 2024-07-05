@@ -9,6 +9,7 @@ import { Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 import { SheetMenu } from "@/components/sheet-menu";
 import Image from "next/image";
+import { CommandHome } from "@/components/command-search";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,7 +50,7 @@ export default function RootLayout({
               </div>
             </Link>
           </h1>
-          <ul className="flex gap-1 lg:gap-3">
+          <ul className="flex gap-1">
             {navItems.map((item) => (
               <li key={item.label} className="hidden sm:block">
                 <Button variant="ghost" asChild>
@@ -57,6 +58,10 @@ export default function RootLayout({
                 </Button>
                 </li>
               ))}
+              <div className="">
+                <CommandHome />
+              </div>
+              
               <ModeToggle />
               <li className="block sm:hidden">
                 <SheetMenu/>
