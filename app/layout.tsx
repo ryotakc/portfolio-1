@@ -62,7 +62,10 @@ export default function RootLayout({
                 <CommandHome />
               </div>
               
-              <ModeToggle />
+              <div className="hidden sm:block">
+                <ModeToggle />
+              </div>
+              
               <li className="block sm:hidden">
                 <SheetMenu/>
               </li>

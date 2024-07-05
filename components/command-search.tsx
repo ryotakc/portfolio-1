@@ -10,8 +10,10 @@ import {
     File,
     House,
     Images,
+    Moon,
     Settings,
     Smile,
+    Sun,
     User,
 } from "lucide-react"
 
@@ -27,9 +29,11 @@ import {
 } from "@/components/ui/command"
 import { Button } from "./ui/button"
 import Link from "next/link"
+import { useTheme } from "next-themes"
 
 export function CommandHome() {
     const [open, setOpen] = React.useState(false)
+    const { setTheme } = useTheme()
 
     React.useEffect(() => {
         const down = (e: KeyboardEvent) => {
@@ -91,6 +95,21 @@ export function CommandHome() {
                             <File className="mr-2 h-4 w-4" />
                             CV
                             {/* <CommandShortcut>⌘C</CommandShortcut> */}
+                        </CommandItem>
+                    </CommandGroup>
+                    <CommandSeparator />
+                    <CommandGroup heading="Theme">
+                        <CommandItem onSelect={() => setTheme("light")}>
+                            <Sun className="mr-2 h-4 w-4" />
+                            Light
+                        </CommandItem>
+                        <CommandItem onSelect={() => setTheme("dark")}>
+                            <Moon className="mr-2 h-4 w-4" />
+                            Dark
+                        </CommandItem>
+                        <CommandItem onSelect={() => setTheme("system")}>
+                            <Settings className="mr-2 h-4 w-4"/>
+                            System
                         </CommandItem>
                     </CommandGroup>
                 </CommandList>
