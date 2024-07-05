@@ -16,7 +16,7 @@ const data: Data = {
                 'Shadcn/ui',
             ],
             // description: 'An environmental impact tracking app for individuals and small businesses',
-            image: '/project/project1.jpg',
+            image: '/projectsPhoto/project1.jpg',
         },
         {
             title: 'Demo',
