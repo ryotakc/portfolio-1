@@ -72,6 +72,12 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      aspectRatio: {
+        "4/3": "4 / 3",
+        "3/2": "3 / 2",
+        "16/9": "16 / 9",
+        "16/10": "16 / 10",
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

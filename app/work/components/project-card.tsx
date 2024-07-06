@@ -35,8 +35,8 @@ export function ProjectCard({ title, image, techStack }: Props) {
                         <Image
                             src={image}
                             alt={title}
-                            layout="fill"
-                            objectFit="cover"
+                            fill
+                            style={{ objectFit: 'cover' }}
                             className="rounded-md"
                         />
                     </AspectRatio>

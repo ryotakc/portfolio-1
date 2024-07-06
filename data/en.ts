@@ -19,14 +19,13 @@ const data: Data = {
             image: '/projectsPhoto/project1.jpg',
         },
         {
-            title: 'Demo',
+            title: 'Float Animation',
             techStack: [
-                'Java',
-                'Kotlin',
-                'Android',
-                'Java',
-                'Kotlin',
-                'Android',
+                'Next.js',
+                'TailwindCSS',
+                'TypeScript',
+                'Vercel',
+                'Shadcn/ui',
             ],
             // description: 'An environmental impact tracking app for individuals and small businesses',
             image: '/photograph/pic2.jpg',
@@ -50,7 +49,7 @@ const data: Data = {
         urlLink: '/',
         },
         {
-            title: 'Demo',
+            title: 'Float Animation',
             description:
                 'An environmental impact tracking app for individuals and small businesses',
             techStack: [
@@ -62,7 +61,7 @@ const data: Data = {
                 'Android',
         ],
         githubLink: 'https://github.com/',
-        urlLink: 'https://github.com/',
+        urlLink: 'https://leok.vercel.app/float-animation',
         }
     ],
 };
