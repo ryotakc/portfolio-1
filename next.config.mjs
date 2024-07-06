@@ -13,6 +13,9 @@ const nextConfig = {
         ],
     },
     async rewrites() {
+        if (!process.env.FLOATANIME_URL) {
+            throw new Error('FLOATANIME_URL environment variable is not set');
+        }
         return [
         {
             source: '/float-animtion/',
