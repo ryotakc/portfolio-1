@@ -18,7 +18,14 @@ interface Props {
 
 export function ProjectCard({ title, image, techStack }: Props) {
         return (
-        <Card className="print:shadow-none flex flex-col">
+        <Card className="print:shadow-none flex flex-col transition duration-500 hover:shadow-2xl hover:scale-105"
+        style={{
+            position: 'relative',
+            overflow: 'hidden',
+            borderRadius: '0.75rem',
+            boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+            transition: 'transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out',
+        }}>
             <CardHeader className="pb-3">
                 <div className="space-y-1">
                     <CardTitle className="text-base">

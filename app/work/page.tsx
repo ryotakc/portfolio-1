@@ -35,7 +35,7 @@ export default function Work() {
             </PageTitle>
 
             <SectionTitle title="Projects" subTitle="My Projects">
-                <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4">
+                <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6">
                     {data.projectDialog.map((projectDialog, index) => (
                         <ProjectDialog
                             key={index}

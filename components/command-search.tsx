@@ -8,8 +8,11 @@ import {
     CodeXml,
     CreditCard,
     File,
+    Github,
     House,
     Images,
+    Instagram,
+    Linkedin,
     Moon,
     Search,
     Settings,
@@ -31,6 +34,7 @@ import {
 import { Button } from "./ui/button"
 import Link from "next/link"
 import { useTheme } from "next-themes"
+import { SiX } from "@icons-pack/react-simple-icons"
 
 export function CommandHome() {
     const [open, setOpen] = React.useState(false)
@@ -112,6 +116,25 @@ export function CommandHome() {
                         <CommandItem onSelect={() => setTheme("system")}>
                             <Settings className="mr-2 h-4 w-4"/>
                             System
+                        </CommandItem>
+                    </CommandGroup>
+                    <CommandSeparator />
+                    <CommandGroup heading="Links">
+                        <CommandItem onSelect={() => handleSelect('https://github.com/ryotakc')}>
+                            <Github className="mr-2 h-4 w-4" />
+                            GitHub
+                        </CommandItem>
+                        <CommandItem onSelect={() => handleSelect('https://twitter.com/leo_rkc')}>
+                            <SiX className="mr-2 h-2 w-2" />
+                            X
+                        </CommandItem>
+                        <CommandItem onSelect={() => handleSelect('https://www.linkedin.com/in/leok/')}>
+                            <Instagram className="mr-2 h-4 w-4" />
+                            Instagram
+                        </CommandItem>
+                        <CommandItem onSelect={() => handleSelect('https://www.linkedin.com/in/leok/')}>
+                            <Linkedin className="mr-2 h-4 w-4" />
+                            LinkedIn
                         </CommandItem>
                     </CommandGroup>
                 </CommandList>

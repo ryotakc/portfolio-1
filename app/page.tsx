@@ -8,8 +8,10 @@ import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { Card } from "@/components/ui/card";
 import YouTubePlayerWidget from "@/components/youtube-player";
+import { SiX } from "@icons-pack/react-simple-icons";
 import Image from "next/image";
 import Link from "next/link";
+import image from "../public/profile.webp"
 
 export default function Home() {
   return (
@@ -62,6 +64,23 @@ export default function Home() {
             </Card>
           </div>
         </div>
+        <div className="grid h-[200px] w-[260px] items-center justify-center gap-4 mt-8 border-2 border-zinc-900 rounded-xl">
+          <a href="https:/x.com" target="_blank" rel="noopener noreferrer">
+            <Card className="h-[100px] w-[190px] dark:shadow-[0px_1px_0px_0px_rgba(255,_255,_255,_0.3)_inset,0_2px_8px_rgba(0,0,0,0.8)] shadow-[0px_1px_0px_0px_rgba(255,_255,_255,_0.3)_inset,0_2px_8px_rgba(0,0,0,0.3)] p-3.5 lg:p-4 gap-4 group transition duration-700 flex bg-gradient-to-tr from-black/20 items-center relative rounded-3xl font-bold text-white " color="#292929">
+              <SiX width={32} height={32} viewBox="0 0 24 24" className="absolute translate-y-4 -z-10 group-hover:rotate-12 group-hover:translate-x-4 group-hover:translate-y-0.5 will-change-transform bottom-full right-4 duration-700 transition origin-center">X</SiX>
+              <div className="overflow-hidden group-hover:-translate-x-0.5 group-hover:-translate-y-1 transition group-hover:scale-110 duration-700 group-hover:-rotate-3 relative size-12 lg:size-14 rounded-xl outline-2 outline-white outline flex items-center gap-2">
+                <Image src={image} alt="profile" fill className="rounded-xl" />
+                
+              </div>
+              <div className="items-center text-center justify-center">
+                <p>I&apos;m on X</p>
+              </div>
+            </Card>              
+          </a>
+    
+        </div>
+
+
       </div>
 
       {/* <div className="container">
