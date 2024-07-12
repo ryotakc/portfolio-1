@@ -20,6 +20,7 @@ export default function About() {
             <PageTitle>
                 <Typing word={word}>
                     I love
+                    <br className="md:hidden"/>
                 </Typing>
                 <p className="text-muted-foreground mb-6">
                     Photography is an art form that captures the world around me, preserving moments in time forever. Our service offers professional skills and creative perspectives to beautifully document your precious moments.

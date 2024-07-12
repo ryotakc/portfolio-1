@@ -25,6 +25,7 @@ export default function Work() {
             <PageTitle>
                 <Typing word={word}>
                     I&apos;m working on
+                    <br className="md:hidden"/>
                 </Typing>
                 <p className="text-muted-foreground mb-6">
                     Here are some of the projects I have worked on. I have used a variety of technologies to build these projects. I am always looking for new projects to work on. 
