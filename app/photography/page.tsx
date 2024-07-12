@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CarouselPhoto } from "./components/carousel-photo";
 import { Metadata } from "next";
 import PageTitle from "@/components/page-title";
+import Typing from "@/components/typing";
 
 
 export const metadata: Metadata = {
@@ -12,9 +13,14 @@ export const metadata: Metadata = {
 };
 
 export default function About() {
+    const word = ['Photography', 'Photo Editing', 'Photo Retouching!'];
+
     return (
         <div>
-            <PageTitle title="Photography">
+            <PageTitle>
+                <Typing word={word}>
+                    I love
+                </Typing>
                 <p className="text-muted-foreground mb-6">
                     Photography is an art form that captures the world around me, preserving moments in time forever. Our service offers professional skills and creative perspectives to beautifully document your precious moments.
                 </p>

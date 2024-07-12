@@ -36,61 +36,57 @@ export default function RootLayout({
     <html lang="ja" suppressHydrationWarning>
       <body className={cn(inter.className, 'min-h-dvh')}>
         <ThemeProvider
-              attribute="class"
-              defaultTheme="dark"
-              enableSystem
-              disableTransitionOnChange
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
         >
-        <header className="container h-16 flex items-center border-b justify-between text-primary">
-          <h1 className="font-bold text-2xl">
-            <Link href="/">
-              <div className="flex">
-                <Image src="/profile.webp" alt="profile" width={32} height={32} className="rounded-md"></Image>
-                <span className="ml-2">leo</span>
-              </div>
-            </Link>
-          </h1>
-          <ul className="flex gap-1">
-            {navItems.map((item) => (
-              <li key={item.label} className="hidden sm:block">
-                <Button variant="ghost" asChild>
-                  <Link href={item.href}>{item.label}</Link>
-                </Button>
+          <header className="container h-16 flex items-center border-b justify-between text-primary">
+            <h1 className="font-bold text-2xl hover:scale-110 transition-transform duration-300">
+              <Link href="/">
+                <div className="flex">
+                  <Image src="/profile.webp" alt="profile" width={32} height={32} className="rounded-md" />
+                  <span className="ml-2">leo</span>
+                </div>
+              </Link>
+            </h1>
+            <ul className="flex gap-1">
+              {navItems.map((item) => (
+                <li key={item.label} className="hidden sm:block hover:scale-105 transition-transform duration-300">
+                  <Button variant="ghost" asChild>
+                    <Link href={item.href}>{item.label}</Link>
+                  </Button>
                 </li>
               ))}
-              <div className="">
+              <div className="hover:scale-105 transition-transform duration-300">
                 <CommandHome />
               </div>
-              
               <div className="hidden sm:block">
                 <ModeToggle />
               </div>
-              
               <li className="block sm:hidden">
                 <SheetMenu/>
               </li>
-          </ul>
-        </header>
+            </ul>
+          </header>
 
-        <main>
-          {children}
-        </main>
+          <main>
+            {children}
+          </main>
 
-        <footer className="container sticky top-full flex items-center justify-between border-t text-primary p-4">
+          <footer className="container sticky top-full flex items-center justify-between border-t text-primary p-4">
             <p className="text-sm">&copy;2024 leo</p>
             <div className="flex flex-col items-center justify-center gap-3">
               <ul className="flex gap-3 items-center justify-center">
-                <li><a href="mailto:rka147@sfu.ca " ><Mail color="#17aa41"></Mail></a></li>
-                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><Linkedin color="#0077b5"></Linkedin></a></li>
-                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><Twitter color="#1da1f2"></Twitter></a></li>
-                <li><a href="https://github.com" target="_blank" rel="noopener noreferrer"><Github ></Github></a></li>
-                <li><a href="https://instagram.com/leok_can" target="_blank" rel="noopener noreferrer"><Instagram color="#e1306c"></Instagram></a></li>
+                <li className="hover:scale-110 transition-transform duration-300"><a href="mailto:rka147@sfu.ca"><Mail color="#17aa41"></Mail></a></li>
+                <li className="hover:scale-110 transition-transform duration-300"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><Linkedin color="#0077b5"></Linkedin></a></li>
+                <li className="hover:scale-110 transition-transform duration-300"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><Twitter color="#1da1f2"></Twitter></a></li>
+                <li className="hover:scale-110 transition-transform duration-300"><a href="https://github.com" target="_blank" rel="noopener noreferrer"><Github /></a></li>
+                <li className="hover:scale-110 transition-transform duration-300"><a href="https://instagram.com/leok_can" target="_blank" rel="noopener noreferrer"><Instagram color="#e1306c"></Instagram></a></li>
               </ul>
             </div>
-        </footer>
-
+          </footer>
         </ThemeProvider>
-        
       </body>
     </html>
   );
