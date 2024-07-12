@@ -9,7 +9,7 @@ export default function PageTitle({
     children: React.ReactNode
 }) {
     return (
-    <div className="py-20 flex items-center">
+    <div className="pt-5 pb-20 flex items-center">
         <div className="container">
             {children}
         </div>

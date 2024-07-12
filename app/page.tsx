@@ -17,19 +17,17 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import Typing from "@/components/typing";
 
 export default function Home() {
-  const word = ['Loves Coding', 'Loves Photography', 'Loves Learning!'];
+  const word = ['Loves Coding!', 'Loves Photography!', 'Loves Learning!'];
 
   return (
     <div>
       <PageTitle >
         <Typing word={word}>
-          Welcome to my portfolio!
-          <br />
           Ryota Kato
         </Typing>
         <p className="text-muted-foreground mb-6">
-          Hello! My name is <span className="font-semibold" color="blue">Ryota Kato</span>! <br />
-          I&apos;m a web developer and photographer based in Vancouver, Canada. Currentry, I&apos;m studying at Simon Fraser University mojor in Computer Science. I&apos;m a passionate coder and photographer. I love to create and capture beautiful things. I&apos;m always looking for new opportunities to learn and grow. Feel free to reach out to me! I&apos;m looking forward to hearing from you! 
+          Hello! Welcome to <span className="font-semibold" color="blue">Ryota Kato</span>&apos;s Portfolio! <br />
+          I&apos;m a web developer and photographer based in Vancouver, Canada. I&apos;m a passionate coder and photographer. I love to create and capture beautiful things. Feel free to reach out to me! I&apos;m looking forward to hearing from you! 
         </p>
         <div className="flex gap-3 font-semibold">
           <Link href="https://cv-leo.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform duration-300">
