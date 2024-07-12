@@ -24,9 +24,10 @@ export default function Home() {
       <PageTitle >
         <Typing word={word}>
           Ryota Kato
+          <br className="md:hidden"/>
         </Typing>
         <p className="text-muted-foreground mb-6">
-          Hello! Welcome to <span className="font-semibold" color="blue">Ryota Kato</span>&apos;s Portfolio! <br />
+          Hi! Welcome to <span className="font-semibold" color="blue">Ryota Kato</span>&apos;s Portfolio! <br />
           I&apos;m a web developer and photographer based in Vancouver, Canada. I&apos;m a passionate coder and photographer. I love to create and capture beautiful things. Feel free to reach out to me! I&apos;m looking forward to hearing from you! 
         </p>
         <div className="flex gap-3 font-semibold">
