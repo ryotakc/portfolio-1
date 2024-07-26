@@ -17,13 +17,13 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import Typing from "@/components/typing";
 
 export default function Home() {
-  const word = ['Loves Coding!', 'Loves Photography!', 'Loves Learning!'];
+  const word = ['Coding!', 'Photography!', 'Learning!'];
 
   return (
     <div>
       <PageTitle >
         <Typing word={word}>
-          Ryota Kato
+          Ryota Kato Loves
           <br className="md:hidden"/>
         </Typing>
         <p className="text-muted-foreground mb-6">
